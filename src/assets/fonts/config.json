@@ -1,0 +1,52 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "23d1c53bc15ca452df9453450e94a19c",
+      "css": "question",
+      "code": 59392,
+      "src": "modernpics"
+    },
+    {
+      "uid": "17ebadd1e3f274ff0205601eef7b9cc4",
+      "css": "help-circled",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3a230e539a4f3b904debd04c6c155034",
+      "css": "help",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "f3eb666ee77d5120ac33c710aa3fd28e",
+      "css": "help-1",
+      "code": 59395,
+      "src": "iconic"
+    },
+    {
+      "uid": "a7289537a68b15b24bd4e3ee1ac20dfa",
+      "css": "help-2",
+      "code": 59396,
+      "src": "elusive"
+    },
+    {
+      "uid": "53ed8570225581269cd7eff5795e8bea",
+      "css": "emo-unhappy",
+      "code": 59397,
+      "src": "fontelico"
+    },
+    {
+      "uid": "3bd18d47a12b8709e9f4fe9ead4f7518",
+      "css": "arrows-ccw",
+      "code": 59398,
+      "src": "entypo"
+    }
+  ]
+}
