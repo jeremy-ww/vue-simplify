@@ -1,8 +1,8 @@
 {
   "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "{{ description }}",
-  "author": " <wuchengkai0@gmail.com>",
+  "description": "{{ name }}",
+  "author": "Army-U <wuchengkai0@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
