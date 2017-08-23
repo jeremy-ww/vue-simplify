@@ -1,3 +1,4 @@
+import noop from 'lodash/noop'
 import api from './api'
 
 export const HTTP_CACHE = {}

@@ -1,4 +1,4 @@
-import { SERVER_WAS_DOWN } from './http_error_message'
+import { SERVER_WAS_DOWN, ERROR_MESSAGE } from './http_error_message'
 import { Message } from 'element-ui'
 import axios from 'axios'
 
