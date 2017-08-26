@@ -5,6 +5,6 @@
       "required": true,
       "message": "Project name"
     },
-    "completeMessage": "Good Luck."
-  }
+  },
+  "completeMessage": "Good Luck."
 }
