@@ -7,7 +7,7 @@ install:
   - npm i
 
 script:
-  - yes "" | ./node_modules/.bin/vue init . test
+  - yes "" | vue init . test
   - cd test
   - npm run lint
   - npm test
