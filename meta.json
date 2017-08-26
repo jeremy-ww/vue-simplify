@@ -4,7 +4,7 @@
       "type": "string",
       "required": true,
       "message": "Project name"
-    },
+    }
   },
   "completeMessage": "Good Luck."
 }
