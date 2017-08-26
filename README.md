@@ -6,7 +6,7 @@
 $ vue init army-u/vue-simplify#template <project_name>
 ```
 
-Example
+Example:
 
 ```bash
 $ vue init army-u/vue-simplify#template my-project
