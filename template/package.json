@@ -2,7 +2,7 @@
   "name": "{{ name }}",
   "version": "1.0.0",
   "description": "{{ name }}",
-  "author": "Army-U <wuchengkai0@gmail.com>",
+  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
