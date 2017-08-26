@@ -13,5 +13,7 @@
   },
   "homepage": "https://github.com/Army-U/vue-simplify",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "vue-cli": "^2.8.2"
+  }
 }
