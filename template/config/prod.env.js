@@ -1,4 +1,4 @@
-var { production: { sso, api } } = require('./url')
+var { testing: { sso, api } } = require('./url')
 
 module.exports = {
   NODE_ENV: '"production"',
