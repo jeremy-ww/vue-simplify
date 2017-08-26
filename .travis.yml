@@ -11,9 +11,9 @@ script:
   - cd test
   - npm i
   - npm run lint
-  - npm test
   - npm run build
 
 cache:
   directories:
     - 'node_modules'
+    - 'template/node_modules'
