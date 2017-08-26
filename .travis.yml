@@ -7,11 +7,7 @@ install:
   - npm i
 
 script:
-  - yes "" | vue init . test
-  - cd test
-  - npm run lint
-  - npm test
-  - npm run build
+  - yes '测试' | echo
 
 cache:
   directories:
