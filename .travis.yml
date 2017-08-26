@@ -8,7 +8,8 @@ install:
   - npm i
 
 script:
-  - echo '完成'
+  - cd template/
+  - npm run dev
 
 cache:
   directories:
