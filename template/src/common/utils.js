@@ -9,3 +9,7 @@ export const cache = (path, params = {}) => {
   HTTP_CACHE[path] = api(options).catch(noop)
   return HTTP_CACHE[path]
 }
+
+export const crayfish = path => {
+  return cache(`${process.env.CRAYFISH}/${path}`, { withCredentials: false })
+}
