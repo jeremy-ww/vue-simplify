@@ -19,7 +19,6 @@ export default {
   height: 100%;
 
   main {
-    padding-top: 20px;
     flex: 1;
   }
 }

@@ -4,10 +4,14 @@ export default {
 
   functional: true,
 
-  render (createElement, context) {
-    return createElement('div', {
+  props: {
+    notice: { type: String, default: '开发中，敬请期待' }
+  },
+
+  render (h, { props: { notice } }) {
+    return h('div', {
       class: { 'developing': true }
-    }, '开发中，敬请期待')
+    }, notice)
   }
 }
 </script>
