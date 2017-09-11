@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "build": "node build/build.js && node ./faas/faas_build_postlude.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -75,5 +74,19 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "faas": {
+    "domain": "{{ name }}",
+    "public": "dist",
+    "description": "{{ name }}",
+    "author_name": "伍程凯",
+    "author_email": "wuchengkai0@gmail.com",
+    "notice": [
+      "wuchengkai0@gmail.com"
+    ],
+    "build": [
+      "npm i",
+      "npm run build"
+    ]
+  }
 }
