@@ -10,6 +10,10 @@ export const cache = (path, params = {}) => {
   return HTTP_CACHE[path]
 }
 
+export const inRange = (number, start, end) => {
+  return number >= Math.min(start, end) && number <= Math.max(start, end)
+}
+
 export const crayfish = path => {
   return cache(`${process.env.CRAYFISH}/${path}`, { withCredentials: false })
 }
