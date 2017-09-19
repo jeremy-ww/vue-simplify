@@ -4,6 +4,13 @@
       "type": "string",
       "required": true,
       "message": "Project name"
+    },
+    "amap": {
+      "type": "confirm",
+      "message": "Need AMap?"
     }
+  },
+  "filters": {
+    "src/components/Map/**/*": "amap"
   }
 }
