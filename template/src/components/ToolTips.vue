@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 .tool-tips {
   max-width: 300px;
 

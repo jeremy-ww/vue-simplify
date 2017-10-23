@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 .map-container {
   position: relative;
   height: 100%;
