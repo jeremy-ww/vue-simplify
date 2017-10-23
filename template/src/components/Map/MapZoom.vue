@@ -49,8 +49,8 @@ export default {
 }
 </script>
 
-<style lang="less">
-@import '../../assets/extends.less';
+<style lang="scss">
+@import '../../assets/extends.scss';
 
 .map-zoom-controls {
   .map-slot;

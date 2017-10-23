@@ -1,22 +1,18 @@
+<template functional>
+  <div class="developing">{{ props.notice }}</div>
+</template>
+
 <script>
 export default {
   name: 'noop',
 
-  functional: true,
-
   props: {
     notice: { type: String, default: '开发中，敬请期待' }
-  },
-
-  render (h, { props: { notice } }) {
-    return h('div', {
-      class: { 'developing': true }
-    }, notice)
   }
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 .developing {
   display: flex;
   align-items: center;

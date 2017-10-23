@@ -1,5 +1,5 @@
 import './bootstrap/register-global-components'
-import './assets/app.less'
+import './assets/app.scss'
 
 import Vue from 'vue'
 import App from './App'
