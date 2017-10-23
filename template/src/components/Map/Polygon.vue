@@ -20,7 +20,6 @@ export default {
     polygon: {
       deep: true,
       handler ({ path }) {
-        // TODO
         if (!path && this.$amap) return this.$destory()
         if (path && !this.$amap) return this.$render()
         if (path && this.$amap) return this.$amap.setPath(cloneDeep(path))

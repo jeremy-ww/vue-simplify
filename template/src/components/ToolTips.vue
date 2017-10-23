@@ -1,17 +1,16 @@
+<template functional>
+  <section :class="{ 'tool-tips-spacing': props.spacing }" class="tool-tips">
+    <p v-for="(item, key) in props.content" :key="key">{{ item }}</p>
+  </section>
+</template>
+
 <script>
 export default {
   name: 'tool-tips',
 
-  functional: true,
-
   props: {
     content: { type: Array, default () { return [] } },
     spacing: { type: Boolean, default: true }
-  },
-
-  render (h, { props: { spacing, content } }) {
-    return h('section',
-      { class: { 'tool-tips-spacing': spacing, 'tool-tips': true } }, content.map(v => h('p', v)))
   }
 }
 </script>

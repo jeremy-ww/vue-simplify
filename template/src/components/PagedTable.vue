@@ -161,7 +161,9 @@ export default {
 
 <style lang="scss">
 .paged-table {
+
   .el-table {
+
     .cell {
       text-align: center;
     }
