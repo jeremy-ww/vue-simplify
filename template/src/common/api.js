@@ -1,4 +1,5 @@
-import { SERVER_WAS_DOWN, ERROR_MESSAGE, NOT_LOGGED_IN } from './http_error_message'
+import { SERVER_WAS_DOWN, HTTP_ERROR_MESSAGE, NOT_LOGGED_IN } from './http_error_message'
+import debounce from 'lodash/debounce'
 import { Message } from 'element-ui'
 import axios from 'axios'
 
@@ -7,12 +8,12 @@ const api = axios.create({
   withCredentials: true
 })
 
-const error = msg => {
+const error = debounce(msg => {
   Message.error({
     message: msg,
     duration: 2000
   })
-}
+})
 
 const handleUserNotLoggedIn = () => {
   const url = encodeURIComponent(window.location.href)
@@ -21,7 +22,7 @@ const handleUserNotLoggedIn = () => {
 
 api.interceptors.response.use(response => response.data, err => {
   const { message, response: { status = message } = {} } = err
-  error(ERROR_MESSAGE[status] || SERVER_WAS_DOWN)
+  error(HTTP_ERROR_MESSAGE[status] || SERVER_WAS_DOWN)
   if (status === NOT_LOGGED_IN) setTimeout(handleUserNotLoggedIn, 1500)
   return Promise.reject(err)
 })
