@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - 'node'
+
+install:
+  - npm i
+
+script:
+  - yes '' | ./node_modules/.bin/vue init . test
+  - cd test
+  - npm i
+  - npm run build
+
+cache:
+  directories:
+    - 'node_modules'
+    - 'template/node_modules'

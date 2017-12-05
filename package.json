@@ -1,0 +1,15 @@
+{
+  "name": "vue-simplify",
+  "version": "0.0.1",
+  "description": "Vue'js Template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Army-U/vue-simplify.git"
+  },
+  "keywords": [],
+  "author": "Army-U <wuchengkai0@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vue-cli": "2.9.2"
+  }
+}
