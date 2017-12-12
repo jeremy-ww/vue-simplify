@@ -15,8 +15,6 @@ const error = debounce(msg => {
   })
 })
 
-error('???')
-
 api.interceptors.response.use(response => response.data, err => {
   const { message, response: { status = message } = {} } = err
   error(HTTP_ERROR_MESSAGE[status] || SERVER_WAS_DOWN)
