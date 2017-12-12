@@ -9,7 +9,6 @@ install:
 script:
   - cd template
   - npm i
-  - npm run dev
   - npm run build
 
 cache:
