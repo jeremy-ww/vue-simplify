@@ -6,6 +6,8 @@ const { styleLoaders } = require('./utils')
 const merge = require('webpack-merge')
 const webpack = require('webpack')
 
+console.log(`> Listen at http://localhost:${port}...`)
+
 module.exports = merge(webpackBaseConfig, {
   module: {
     rules: styleLoaders()
