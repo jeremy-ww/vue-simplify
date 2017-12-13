@@ -6,7 +6,18 @@ const { styleLoaders } = require('./utils')
 const merge = require('webpack-merge')
 const webpack = require('webpack')
 
-console.log(`> Listen at http://localhost:${port}...`)
+class CompileDoneWebpackPlugin {
+  apply (compiler) {
+    compiler.plugin('done', compilation => {
+      if (++CompileDoneWebpackPlugin.count && CompileDoneWebpackPlugin.count > 1) return
+      console.log('\x1b[1m\x1b[34m' + `> Listen at http://localhost:${port}` + '\x1b[39m\x1b[22m')
+    })
+  }
+}
+
+CompileDoneWebpackPlugin.count = 0
+
+console.log('> Starting dev server...')
 
 module.exports = merge(webpackBaseConfig, {
   module: {
@@ -20,8 +31,8 @@ module.exports = merge(webpackBaseConfig, {
     noInfo: true,
     overlay: true,
     inline: true,
-    stats: 'errors-only',
-    clientLogLevel: 'none'
+    disableHostCheck: true,
+    clientLogLevel: 'warning'
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -34,6 +45,7 @@ module.exports = merge(webpackBaseConfig, {
       template: 'index.html',
       inject: true
     }),
-    new FriendlyErrorsPlugin()
+    new FriendlyErrorsPlugin(),
+    new CompileDoneWebpackPlugin()
   ]
 })

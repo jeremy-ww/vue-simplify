@@ -3,10 +3,6 @@
 </template>
 
 <script>
-import api from '../common/api'
-
-console.log(api)
-
 export default {
   name: 'noop',
 
