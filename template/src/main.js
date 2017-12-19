@@ -1,6 +1,4 @@
 import './bootstrap/register-global-components'
-// babel-plugin-component doest not support babel 7
-import 'element-ui/lib/theme-chalk/index.css'
 import './assets/app.css'
 
 import Vue from 'vue'
